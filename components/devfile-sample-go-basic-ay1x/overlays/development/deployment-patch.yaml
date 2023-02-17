@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-ay1x
+  namespace: gbenhaim-stonesoup-ocm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:23e6fd5400bc6142a74a5139fd0cdfdccecb3cb1aaae0eccc3fcd93322b86506
+        name: my-go
+        resources: {}
+status: {}
